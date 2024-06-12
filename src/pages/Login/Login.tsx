@@ -1,11 +1,13 @@
 import './Login.css';
 
-// src/Login.tsx
 import React, { useState } from 'react';
+
+import { useNavigate } from 'react-router-dom';
 
 const Login: React.FC = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState<'ru' | 'en'>('ru');
+    const navigate = useNavigate();
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
@@ -13,6 +15,12 @@ const Login: React.FC = () => {
 
     const handleLanguageChange = (language: 'ru' | 'en') => {
         setSelectedLanguage(language);
+    };
+
+    const handleSubmit = (event: React.FormEvent) => {
+        event.preventDefault();
+        // логика для логина
+        navigate('/main');
     };
 
     return (
@@ -37,7 +45,7 @@ const Login: React.FC = () => {
                 </defs>
             </svg>
             <h1>Вход в Sirius Future</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="input-group">
                     <input type="email" id="email" name="email" required placeholder='E-mail'/>
                 </div>

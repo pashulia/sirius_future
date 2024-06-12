@@ -1,15 +1,23 @@
+// src/App.tsx
 import React from 'react';
 
-import { Provider } from 'react-redux';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
 
 import Login from './pages/Login/Login';
-import store from './store/store';
+import MainPage from './pages/Main/MainPage';
 
 const App: React.FC = () => {
   return (
-    <Provider store={store}>
-      <Login />
-    </Provider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/main" element={<MainPage />} />
+      </Routes>
+    </Router>
   );
 };
 
