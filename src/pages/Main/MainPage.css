@@ -1,4 +1,3 @@
-/* src/MainPage.css */
 .main-page {
     display: flex;
     height: 100vh;
@@ -116,15 +115,89 @@ a {
     color: #008AFF;
 }
 
-.promo-banner {
-    background-color: #d9eaff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.promo {
+    display: flex;
 }
 
-.promo-banner p {
-    margin: 0 0 10px 0;
+.promo-banner {
+    background-color: #7362BC;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px 20px 0 0;
+    display: flex;
+}
+
+.promo-banner-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height:32px;
+    width: 366px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.promo-banner-content {
+    width: 355px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height:20px;
+    color: #fff;
+}
+
+.promo-banner-img {
+    width: 261px;
+    height: 248px;
+}
+
+.upcoming-banner {
+    background-color: #FFF1CB;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px 20px 0 0;
+    width: 344px;
+    text-align: center;
+}
+
+.upcoming-banner-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height:20px;
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+    color: #323854;
+    margin: auto;
+}
+
+.timer {
+    font-weight: 400;
+    font-size: 36px;
+    line-height:35px;
+    text-align: center;
+}
+
+.small {
+    font-weight: 400;
+    font-size: 15px;
+    line-height:20.25px;
+}
+
+.upcoming-btn {
+    width: 220px;
+    height: 48px;
+    padding: 10px 70px;
+    border: 1px dashed #323854;
+    border-radius: 30px;
+    background-color: inherit
+}
+
+.pink-banner {
+    background-color: #E8CBFF;
+    width: 162px;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px 20px 0 0;
+    text-align: center;
 }
 
 .lessons-balance, .upcoming-lessons {
