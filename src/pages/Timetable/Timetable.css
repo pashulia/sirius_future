@@ -1,3 +1,62 @@
-h1 {
-    color: red
+.timetable-page {
+    padding: 20px;
+    display: flex;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+.calendar {
+    border-radius: 30px;
+}
+
+.timetable-header {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    color: #323854;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.rbc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rbc-btn-group button {
+    margin-right: 5px;
+}
+
+.rbc-event {
+    background-color: #4caf50;
+    color: white;
+}
+
+.rbc-event:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
