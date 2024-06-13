@@ -117,6 +117,7 @@ a {
 
 .promo {
     display: flex;
+    justify-content: space-around;
 }
 
 .promo-banner {
@@ -200,29 +201,75 @@ a {
     text-align: center;
 }
 
-.lessons-balance, .upcoming-lessons {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.content-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
 }
 
-.lessons-balance ul, .upcoming-lessons ul {
+.lessons-balance {
+    background-color: #fff;
+    padding: 28px 30px;
+    border-radius: 30px;
+    border: 1px solid #7362BC;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 444px;
+}
+
+.lessons-balance ul {
     list-style: none;
     padding: 0;
 }
 
-.lessons-balance ul li, .upcoming-lessons ul li {
+.lessons-balance ul li {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    align-items: center;
+    padding: 23px 0;
 }
 
-.lessons-balance ul li span, .upcoming-lessons ul li span {
+.lessons-balance ul li span {
     flex: 1;
     text-align: center;
 }
 
-.upcoming-lessons ul li button {
-    margin-left: 10px;
+.lessons-balance hr {
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 0;
+}
+
+.lessons-balance-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.lesson-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 360px;
+}
+
+.lesson-balance ul {
+    background-color: #EEEEFF;
+    border-radius: 30px;
+    width: 40%;
+    height: 40px;
+    list-style: none;
+}
+
+.lessons-balance button {
+    background-color: #7362BC;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 16px;
+    width: 100%;
 }
