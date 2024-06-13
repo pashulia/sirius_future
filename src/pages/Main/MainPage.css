@@ -1,0 +1,275 @@
+.main-page {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height:24px
+}
+
+.user-name {
+    color: #8D7FC7;
+}
+
+.user-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.chat {
+    text-decoration: none;
+    position: relative;
+}
+
+.new-mess {
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    font-size: 16px;
+}
+
+.btn-user {
+    width: 42px;
+    height: 44px;
+    border-radius: 30px;
+}
+
+.user-profile .dropdown {
+    position: relative;
+    display: block;
+
+}
+
+.user-profile .dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.user-profile .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 250px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.change-user {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.change-user {
+    background-color:#fff;;
+    margin-right: 15px;
+    border-radius: 16px;
+}
+
+.user-profile .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.change-user-name {
+    margin-left: 15px
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+a {
+    text-decoration: none;
+}
+
+.logout-link {
+    color: #008AFF;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.promo-banner {
+    background-color: #7362BC;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px 20px 0 0;
+    display: flex;
+}
+
+.promo-banner-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height:32px;
+    width: 366px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.promo-banner-content {
+    width: 355px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height:20px;
+    color: #fff;
+}
+
+.promo-banner-img {
+    width: 261px;
+    height: 248px;
+}
+
+.upcoming-banner {
+    background-color: #FFF1CB;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px 20px 0 0;
+    width: 344px;
+    text-align: center;
+}
+
+.upcoming-banner-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height:20px;
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+    color: #323854;
+    margin: auto;
+}
+
+.timer {
+    font-weight: 400;
+    font-size: 36px;
+    line-height:35px;
+    text-align: center;
+}
+
+.small {
+    font-weight: 400;
+    font-size: 15px;
+    line-height:20.25px;
+}
+
+.upcoming-btn {
+    width: 220px;
+    height: 48px;
+    padding: 10px 70px;
+    border: 1px dashed #323854;
+    border-radius: 30px;
+    background-color: inherit
+}
+
+.pink-banner {
+    background-color: #E8CBFF;
+    width: 162px;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px 20px 0 0;
+    text-align: center;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.lessons-balance {
+    background-color: #fff;
+    padding: 28px 30px;
+    border-radius: 30px;
+    border: 1px solid #7362BC;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 444px;
+}
+
+.lessons-balance ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lessons-balance ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0;
+}
+
+.lessons-balance ul li span {
+    flex: 1;
+    text-align: center;
+}
+
+.lessons-balance hr {
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 0;
+}
+
+.lessons-balance-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.lesson-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 360px;
+}
+
+.lesson-balance ul {
+    background-color: #EEEEFF;
+    border-radius: 30px;
+    width: 40%;
+    height: 40px;
+    list-style: none;
+}
+
+.lessons-balance button {
+    background-color: #7362BC;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 16px;
+    width: 100%;
+}
