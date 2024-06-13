@@ -9,6 +9,7 @@ import {
 
 import Login from './pages/Login/Login';
 import MainPage from './pages/Main/MainPage';
+import Timetable from './pages/Timetable/Timetable';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/main" element={<MainPage />} />
+        <Route path="/timetable" element={<Timetable />} />
       </Routes>
     </Router>
   );
